@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background-color: white;
+    min-height: 620px;
+    width: 450px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.search{
+    width: 400px;
+    background-color: rgb(190, 190, 190);
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 23px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+}
+
+input::placeholder{
+    color: whitesmoke;
+    margin: auto;
+    align-items: center;
+}
+
+
+.box{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.name h2{
+    background-color: white;
+    color: rgb(255, 0, 0);
+}
+.name{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button{
+    outline: none;
+    border: none;
+    color: black;
+    background-color: rgb(255, 124, 54);
+    padding: 15px;
+    margin-left: 190px;
+    margin-top: 18px;
+    border-radius: 15px ;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+    padding: 14px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: rgb(171, 170, 170);
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    background-color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: blanchedalmond;
+}
+
+h4{
+    color: red;
+    background-color: white;
+}
+.name{
+    display: grid;
+}
